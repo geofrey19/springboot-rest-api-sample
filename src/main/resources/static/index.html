@@ -15,25 +15,28 @@
 
 	<form action="" id="formCadastroUser">
 		<div class="form-group">
-			<label for="id">ID</label> <input
-				type="text" class="form-control" id="id" readonly="readonly"> 
+			<label for="id">ID</label> <input type="text" class="form-control"
+				id="id" readonly="readonly">
 		</div>
-		
+
 		<div class="form-group">
-			<label for="nome">Nome do Usuário</label> <input
-				type="text" class="form-control" id="nome"
-				placeholder="Informe o nome" required="required">
+			<label for="nome">Nome do Usuário</label> <input type="text"
+				class="form-control" id="nome" placeholder="Informe o nome"
+				required="required">
 		</div>
-		
+
 		<div class="form-group">
-			<label for="idade">Idade do Usuário</label> <input
-				type="number" class="form-control" id="idade"
-				placeholder="Informe a idade" required="required">
+			<label for="idade">Idade do Usuário</label> <input type="number"
+				class="form-control" id="idade" placeholder="Informe a idade"
+				required="required">
 		</div>
-		
-		<button type="submit" class="btn btn-primary">Enviar</button>
+
+		<button type="submit" class="btn btn-primary" onclick="salvarUsuario()">Salvar</button>
 	</form>
 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"></script>
 
 	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -48,5 +51,15 @@
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+function salvarUsuario(){
+	var id = $("#id").val();
+	var nome = $("#nome").val();
+	var idade = $("#idade").val();
+	
+	alert(nome);
+	
+}
+</script>
 </body>
 </html>
